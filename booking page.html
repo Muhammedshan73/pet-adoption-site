@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Event Scheduling</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header main">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo">Pet care</a>
+                </div>
+                <button type="button" class="nav-toggler js-nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav js-nav">
+                    <ul>
+                        <li style="--item:0"><a href="index.html" class="active">home</a></li>
+                        <li style="--item:1"><a href="about.html">about</a></li>
+                        <li style="--item:2"><a href="service.html">services</a></li>
+                        <li style="--item:3"><a href="pricing.html">pricing</a></li>
+                        <li style="--item:4"><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+  <div class="container" id="eventContainer">
+    <h2>Event Scheduling</h2>
+    <form id="eventForm">
+      <label for="eventName">Booking</label>
+      <select id="eventName" name="eventName" required>
+        
+        <!-- Add more events as needed -->
+      </select>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Your Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="eventDate"> Date:</label>
+      <input type="date" id="eventDate" name="eventDate" required>
+
+
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="confirmationMessage" class="hidden">
+      <h3>Your Event Regestration is Confirmed!</h3>
+      <p id="confirmedEvent"></p>
+      <p id="confirmedTime"></p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-item">
+                    <h3>about us</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">linkedin</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">privacy policy</a></li>
+                        <li><a href="terms.html">terms and conditions</a></li>
+                        <li><a href="refund.html">refund policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+
+        <div class="container">
+            <p>Created by Shan</p>
+        </div>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
